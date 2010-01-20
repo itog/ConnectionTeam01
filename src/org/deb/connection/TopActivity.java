@@ -1,6 +1,9 @@
 package org.deb.connection;
 
+
+
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -31,6 +34,7 @@ public class TopActivity extends Activity implements OnClickListener {
 		case R.id.bluetooth_button:
 			//TODO start bluetooth activity
 			Log.v(TAG, "Start Bluetooth Activity");
+			startActivity(new Intent(this, BluetoothChat.class));
 			break;
 		case R.id.handwriting_button:
 			//TODO start handwriting activity
